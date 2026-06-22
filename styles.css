@@ -248,7 +248,7 @@ p {
   display: flex;
   align-items: center;
   z-index: 1000;
-  background-color: rgba(251, 250, 246, 0.0);
+  background-color: rgba(246, 251, 250, 0.527);
   transition: background-color var(--t-mid), box-shadow var(--t-mid), height var(--t-mid);
 }
 
@@ -381,6 +381,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: -1;
+  overflow: hidden;
 }
 
 .hero-img {
@@ -388,6 +389,7 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center 65%;
+  display: block;
 }
 
 .hero-overlay {
@@ -399,6 +401,13 @@ p {
     rgba(31, 25, 15, 0.45) 45%,
     rgba(20, 30, 16, 0.78) 100%
   );
+}
+
+.hero-inner-aux {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 1rem;
+  border-radius: 16px;
+
 }
 
 .hero-inner {
@@ -447,10 +456,11 @@ p {
 
 .hero-actions {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   opacity: 0;
-  animation: fadeUp 0.9s var(--ease) 0.7s forwards;
+  animation: fadeUp 0.9s var(--ease) 0.7s forwards;  
 }
 
 @keyframes fadeUp {
