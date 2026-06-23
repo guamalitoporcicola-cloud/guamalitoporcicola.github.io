@@ -804,6 +804,9 @@ p {
   border-radius: var(--radius);
   box-shadow: var(--sombra);
   display: block;
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 /* ============================================================
